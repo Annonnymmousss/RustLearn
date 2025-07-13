@@ -1,0 +1,46 @@
+# Binaries and build output
+/target/
+
+# Backup files
+**/*.rs.bk
+
+# If using Cargo (which you almost always are)
+Cargo.lock
+
+# Ignore editor/IDE specific files
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs (CLion, IntelliJ, etc.)
+.idea/
+
+# macOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Byebug history file
+.byebug_history
+
+# Logs
+*.log
+
+# Node stuff if you're using frontend (optional)
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# Coverage reports
+/coverage/
+
+# Rust Analyzer
+rust-project.json
+
+# Others
+*.swp
