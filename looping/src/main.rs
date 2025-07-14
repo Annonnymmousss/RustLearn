@@ -1,5 +1,6 @@
 fn main() {
 
+    
 //loop
 let mut count = 0;
 'counting_up: loop {     // we can declare such labels to use break or continue as we are allowed to use it in only inner loops
