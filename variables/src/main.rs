@@ -10,5 +10,6 @@ fn main() {
     let spaces = spaces.len();//this is valid
 
     let mut spaces = "   ";
+    
     spaces = spaces.len();//this isnt 
 }
