@@ -37,7 +37,6 @@ fn main() {
         width: 30,
         height: 50,
     };
-
     println!(
         "The area of the rectangle is {} square pixels.",
         area(&rect1) //& because we dont want to take the ownership
