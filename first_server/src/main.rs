@@ -10,7 +10,7 @@ use axum::response::Html;
 async fn main(){
     let routes_hello = Router::new().route(
         "/hello",
-        get(|| async{Html("HeLLO world")}),
+        get(|| async{Html("HellO world")}),
     );
 
     let addr = SocketAddr::from(([127,0,0,1],8080));
