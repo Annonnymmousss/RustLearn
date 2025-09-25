@@ -1,17 +1,14 @@
 
 use axum::Router;
 use axum::routing::get;
-use axum::response::Html;
+use axum::response::{Html, IntoResponse};
  use std::net::SocketAddr;
 
 #[tokio::main]
 
 
 async fn main(){
-    let routes_hello = Router::new().route(
-        "/hello",
-        get(|| async{Html("HellO world")}),
-    );
+    let routes_hello = Router::new().route("/hello",get(handler_hello));
 
     let addr = SocketAddr::from(([127,0,0,1],8080));
     println!("->> LISTENING on {addr}\n");
@@ -21,3 +18,7 @@ async fn main(){
         .unwrap()
 }
 
+async fn handler_hello() -> impl IntoResponse{
+    println!("->> {:<12} - handler_hello","HANDLER");
+    Html("Hello world")
+}
